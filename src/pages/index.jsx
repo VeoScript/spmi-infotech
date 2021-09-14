@@ -2,6 +2,7 @@ import React from 'react'
 import Head from 'next/head'
 import Layout from '~/layouts/default'
 import Header from '~/components/Header'
+import CarouselComponent from '~/components/CarouselComponent'
 import DailyConsultations from '~/components/DailyConsultations'
 
 export default function Home() {
@@ -13,6 +14,7 @@ export default function Home() {
       <Layout>
         <div className="flex flex-col items-center w-full h-full">
           <Header page="Home" />
+          <CarouselComponent />
           <DailyConsultations />
         </div>
       </Layout>
