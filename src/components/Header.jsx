@@ -1,6 +1,6 @@
 import React from 'react'
 import Link from 'next/link'
-import { FiHome, FiUser, FiLogOut, FiUserPlus, FiBell, FiCast, FiSettings } from 'react-icons/fi'
+import { FiHome, FiUser, FiLogOut, FiUserPlus, FiBell, FiCast, FiGlobe, FiSettings } from 'react-icons/fi'
 
 export default function Header() {
 
@@ -22,6 +22,12 @@ export default function Header() {
           <a className="flex items-center space-x-1 transition ease-in-out duration-300 hover:text-lavender-light">
             <FiHome />
             <span className="font-light text-xs">Home</span>
+          </a>
+        </Link>
+        <Link href="/">
+          <a className="flex items-center space-x-1 transition ease-in-out duration-300 hover:text-lavender-light">
+            <FiGlobe />
+            <span className="font-light text-xs">News</span>
           </a>
         </Link>
         <Link href="/">
