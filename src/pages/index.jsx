@@ -12,7 +12,7 @@ export default function Home() {
         <title>SPMI IT</title>
       </Head>
       <Layout>
-        <div className="flex flex-col items-center w-full h-full">
+        <div className="flex flex-col items-center w-full h-full overflow-y-auto">
           <Header page="Home" />
           <CarouselComponent />
           <DailyConsultations />
