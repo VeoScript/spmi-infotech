@@ -1,37 +1,39 @@
 import React from 'react'
 import Link from 'next/link'
-import { FiHome, FiUser, FiLogOut, FiUserPlus, FiBell, FiCast, FiGlobe, FiSettings } from 'react-icons/fi'
+import { useRouter } from 'next/router'
+import { FiHome, FiUser, FiLogOut, FiUserPlus, FiBell, FiCast, FiGlobe, FiShield, FiMessageSquare } from 'react-icons/fi'
 
-export default function Header() {
+export default function Header({ page }) {
 
+  const router = useRouter()
   const [dropdown, setDropdown] = React.useState(false)
 
   return (
     <div className="flex flex-row items-center justify-between w-full py-3 px-5 border-b border-lavender-black border-opacity-20">
       <div className="flex">
-        <span className="font-bold">Home</span>
+        <span className="font-bold">{ page }</span>
       </div>
-      {/* <div className="flex items-center w-full max-w-xs">
-        <div className="flex items-center w-full px-3 text-sm border-2 border-lavender-white focus-within:border-lavender-black focus-within:border-opacity-20 rounded-full bg-white">
-          <FiSearch className="text-xl text-lavender-black text-opacity-50" />
-          <input type="text" placeholder="Search" className="w-full px-3 py-2 bg-transparent outline-none" />
-        </div>
-      </div> */}
       <div className="flex items-center space-x-5 text-lg">
         <Link href="/">
-          <a className="flex items-center space-x-1 transition ease-in-out duration-300 hover:text-lavender-light">
+          <a className={`${ router.pathname === '/' ? 'text-lavender-light' : 'text-lavender-black' } flex items-center space-x-1 transition ease-in-out duration-300 hover:text-lavender-light`}>
             <FiHome />
             <span className="font-light text-xs">Home</span>
           </a>
         </Link>
-        <Link href="/">
-          <a className="flex items-center space-x-1 transition ease-in-out duration-300 hover:text-lavender-light">
+        <Link href="/news">
+          <a className={`${ router.pathname === '/news' ? 'text-lavender-light' : 'text-lavender-black' } flex items-center space-x-1 transition ease-in-out duration-300 hover:text-lavender-light`}>
             <FiGlobe />
             <span className="font-light text-xs">News</span>
           </a>
         </Link>
         <Link href="/">
-          <a className="flex items-center space-x-1 transition ease-in-out duration-300 hover:text-lavender-light">
+          <a className={`${ router.pathname === '/chat' ? 'text-lavender-light' : 'text-lavender-black' } flex items-center space-x-1 transition ease-in-out duration-300 hover:text-lavender-light`}>
+            <FiMessageSquare />
+            <span className="font-light text-xs">Chat</span>
+          </a>
+        </Link>
+        <Link href="/">
+          <a className={`${ router.pathname === '/myaccount' ? 'text-lavender-light' : 'text-lavender-black' } flex items-center space-x-1 transition ease-in-out duration-300 hover:text-lavender-light`}>
             <FiUser />
             <span className="font-light text-xs">My Account</span>
           </a>
@@ -42,7 +44,7 @@ export default function Header() {
             className="flex items-center space-x-1 transition ease-in-out duration-300 hover:text-lavender-light"
             onClick={() => { setDropdown(true) }}
           >
-            <FiSettings />
+            <FiShield />
             <span className="font-light text-xs">Administrator</span>
           </button>
           {setDropdown && (
