@@ -19,7 +19,11 @@ module.exports = {
       }
     }
   },
+  variants: {
+    scrollbar: ['dark']
+  },
   plugins: [
-    require('@tailwindcss/line-clamp')
+    require('@tailwindcss/line-clamp'),
+    require('tailwind-scrollbar')
   ],
 }

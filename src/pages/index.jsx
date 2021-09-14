@@ -2,6 +2,7 @@ import React from 'react'
 import Head from 'next/head'
 import Layout from '~/layouts/default'
 import Header from '~/components/Header'
+import DailyConsultations from '~/components/DailyConsultations'
 
 export default function Home() {
   return (
@@ -12,6 +13,7 @@ export default function Home() {
       <Layout>
         <div className="flex flex-col items-center w-full h-full">
           <Header page="Home" />
+          <DailyConsultations />
         </div>
       </Layout>
     </React.Fragment>
