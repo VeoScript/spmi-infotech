@@ -49,7 +49,7 @@ export default function Header() {
             <React.Fragment>
               <button onClick={() => {setDropdown(false)}} type="button" className={`${dropdown ? 'z-20 block fixed inset-0 w-full h-full cursor-default focus:outline-none' : 'hidden'}`}></button>
               <div className={`z-40 w-full ${dropdown ? 'fixed' : 'hidden'}`}>
-                <div className="flex flex-col w-full max-w-[10rem] mt-2 rounded-md overflow-hidden bg-lavender-black bg-opacity-10 border border-lavender-black border-opacity-20">
+                <div className="flex flex-col w-full max-w-[10rem] mt-2 rounded-md overflow-hidden bg-lavender-white border border-lavender-black border-opacity-20">
                   <div className="flex flex-row items-center w-full">
                     <Link href="/">
                       <a className="flex items-center w-full space-x-1 p-3 border-b border-lavender-black border-opacity-20 hover:bg-lavender-black hover:text-lavender-white">
