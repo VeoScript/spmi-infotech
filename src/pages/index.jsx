@@ -12,10 +12,12 @@ export default function Home() {
         <title>SPMI IT</title>
       </Head>
       <Layout>
-        <div className="flex flex-col items-center w-full h-full overflow-y-auto">
+        <div className="flex flex-col items-center w-full h-full overflow-hidden">
           <Header page="Home" />
-          <CarouselComponent />
-          <DailyConsultations />
+          <div className="flex flex-col w-full h-full overflow-y-auto">
+            <CarouselComponent />
+            <DailyConsultations />
+          </div>
         </div>
       </Layout>
     </React.Fragment>
