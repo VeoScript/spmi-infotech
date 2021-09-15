@@ -8,7 +8,7 @@ export default function News({ news }) {
   return (
     <React.Fragment>
       <Head>
-        <title>News</title>
+        <title>ITCS | News</title>
       </Head>
       <Layout>
         <div className="flex flex-col items-center w-full h-full overflow-hidden">

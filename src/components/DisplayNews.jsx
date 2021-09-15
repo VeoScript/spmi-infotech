@@ -7,7 +7,7 @@ export default function DisplayNews({ news }) {
     <div className="flex flex-col w-full h-full overflow-y-auto p-3 space-y-2">
       {news.articles.map((({ source, title, url, urlToImage, publishedAt, content }, i) => {
         return (
-          <div className="flex flex-row items-center w-full h-full border border-lavender-black border-opacity-20 space-x-3" key={i}>
+          <div className="flex flex-row items-center w-full h-full border border-lavender-white border-opacity-20 space-x-3" key={i}>
             <div className="flex w-full max-w-sm h-full">
               <img
                 src={ !urlToImage ? 'https://blog.remitly.com/wp-content/uploads/2018/06/philippines-1195394_1920.jpg' : urlToImage }
@@ -28,11 +28,11 @@ export default function DisplayNews({ news }) {
                 </h1>
               </div>
               <div className="flex w-full">
-                <h1 className="font-bold text-sm">{ source.name }</h1>
+                <h1 className="font-bold text-sm text-lavender-light">{ source.name }</h1>
               </div>
               <div className="flex w-full">
                 <Link href={url}>
-                  <a target="_blank" className="flex items-center px-3 py-[5px] space-x-1 border border-lavender-black border-opacity-20 transition ease-in-out duration-100 hover:scale-95">
+                  <a target="_blank" className="flex items-center px-3 py-[5px] space-x-1 border border-lavender-white border-opacity-20 transition ease-in-out duration-100 hover:scale-95">
                     <span className="font-light text-xs">Read More...</span>
                   </a>
                 </Link>

@@ -9,7 +9,7 @@ export default function Home() {
   return (
     <React.Fragment>
       <Head>
-        <title>SPMI IT</title>
+        <title>ITCS</title>
       </Head>
       <Layout>
         <div className="flex flex-col items-center w-full h-full overflow-hidden">
