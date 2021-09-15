@@ -1,4 +1,4 @@
-import RightSideBar from '~/components/RightSideBar'
+import SideBar from '~/components/SideBar'
 
 export default function Layout({ children }) {
   return (
@@ -6,7 +6,7 @@ export default function Layout({ children }) {
       <div className="flex w-full h-full">
         { children }
       </div>
-      <RightSideBar />
+      <SideBar />
     </div>
   )
 }

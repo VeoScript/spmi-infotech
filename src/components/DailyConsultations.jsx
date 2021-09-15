@@ -18,7 +18,7 @@ export default function DailyConsultations() {
           <div className="flex flex-row items-center w-full h-full py-3 border border-lavender-white border-opacity-20 space-x-3 transition ease-in-out duration-300 hover:bg-lavender-dark hover:bg-opacity-10">
             <div className="flex flex-col w-full max-w-full px-3 py-2 space-y-2">
               <div className="flex flex-row items-center w-full space-x-2">
-                <h1 className="font-bold text-xl">Lalisa Manoban</h1>
+                <h1 className="font-bold text-xl">Lalisa Manoban <span className="font-light text-sm text-lavender-white text-opacity-50">PC 5</span></h1>
                 <div className="flex items-center px-3 py-[2px] space-x-1 bg-lavender-light text-lavender-white border border-lavender-black border-opacity-20">
                   <span className="font-light text-[10px]">Undone</span>
                 </div>
