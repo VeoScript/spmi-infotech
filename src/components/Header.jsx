@@ -2,6 +2,7 @@ import React from 'react'
 import Link from 'next/link'
 import { useRouter } from 'next/router'
 import { FiHome, FiUser, FiLogOut, FiUserPlus, FiBell, FiCast, FiGlobe, FiShield, FiMessageSquare } from 'react-icons/fi'
+import About from './Modals/About'
 
 export default function Header({ page }) {
 
@@ -81,6 +82,7 @@ export default function Header({ page }) {
             </React.Fragment>
           )}
         </div>
+        <About />
         <Link href="/">
           <a className="flex items-center space-x-1 transition ease-in-out duration-300 hover:text-lavender-light">
             <FiLogOut />
