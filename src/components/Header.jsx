@@ -1,8 +1,9 @@
 import React from 'react'
 import Link from 'next/link'
 import { useRouter } from 'next/router'
-import { FiHome, FiUser, FiLogOut, FiUserPlus, FiBell, FiCast, FiGlobe, FiShield, FiMessageSquare } from 'react-icons/fi'
+import { FiHome, FiUser, FiLogOut, FiBell, FiCast, FiGlobe, FiShield, FiMessageSquare, FiUsers } from 'react-icons/fi'
 import About from './Modals/About'
+import CreateAccount from './Modals/CreateAccount'
 
 export default function Header({ page }) {
 
@@ -42,7 +43,7 @@ export default function Header({ page }) {
         <div className="relative">
           <button
             type="button"
-            className="flex items-center space-x-1 transition ease-in-out duration-300 hover:text-lavender-light"
+            className="flex items-center space-x-1 transition ease-in-out duration-300 hover:text-lavender-light outline-none"
             onClick={() => { setDropdown(true) }}
           >
             <FiShield />
@@ -55,7 +56,7 @@ export default function Header({ page }) {
                 <div className="flex flex-col w-full max-w-[10rem] mt-2 rounded-md overflow-hidden bg-lavender-black border border-lavender-white border-opacity-20">
                   <div className="flex flex-row items-center w-full">
                     <Link href="/">
-                      <a className="flex items-center w-full space-x-1 p-3 border-b border-lavender-black border-opacity-20 hover:bg-lavender-light hover:text-lavender-white">
+                      <a className="flex items-center w-full space-x-2 p-3 border-b border-lavender-black border-opacity-20 hover:bg-lavender-light hover:text-lavender-white">
                         <FiCast />
                         <span className="font-light text-xs">Monthly Reports</span>
                       </a>
@@ -63,17 +64,20 @@ export default function Header({ page }) {
                   </div>
                   <div className="flex flex-row items-center w-full">
                     <Link href="/">
-                      <a className="flex items-center w-full space-x-1 p-3 border-b border-lavender-black border-opacity-20 hover:bg-lavender-light hover:text-lavender-white">
+                      <a className="flex items-center w-full space-x-2 p-3 border-b border-lavender-black border-opacity-20 hover:bg-lavender-light hover:text-lavender-white">
                         <FiBell />
                         <span className="font-light text-xs">Consultations</span>
                       </a>
                     </Link>
                   </div>
                   <div className="flex flex-row items-center w-full">
+                    <CreateAccount setDropdown={setDropdown} />
+                  </div>
+                  <div className="flex flex-row items-center w-full">
                     <Link href="/">
-                      <a className="flex items-center w-full space-x-1 p-3 hover:bg-lavender-light hover:text-lavender-white">
-                        <FiUserPlus />
-                        <span className="font-light text-xs">Add Account</span>
+                      <a className="flex items-center w-full space-x-2 p-3 border-b border-lavender-black border-opacity-20 hover:bg-lavender-light hover:text-lavender-white">
+                        <FiUsers  />
+                        <span className="font-light text-xs">Accounts Registered</span>
                       </a>
                     </Link>
                   </div>
