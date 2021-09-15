@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@headlessui/react": "^1.4.1",
     "@tailwindcss/line-clamp": "^0.2.1",
     "moment": "^2.29.1",
     "next": "11.1.2",
