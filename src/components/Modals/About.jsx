@@ -17,7 +17,7 @@ export default function About() {
   return (
     <>
       <button
-        className="flex items-center space-x-1 transition ease-in-out duration-300 hover:text-lavender-light"
+        className="flex items-center space-x-1 transition ease-in-out duration-300 hover:text-lavender-light outline-none"
         type="button"
         onClick={openModal}
       >
@@ -89,7 +89,7 @@ export default function About() {
                 <div className="mt-4">
                   <button
                     type="button"
-                    className="w-full max-w-[8rem] py-2 text-sm text-center bg-lavender-light hover:bg-opacity-80"
+                    className="w-full max-w-[8rem] py-2 text-sm text-center bg-lavender-light hover:bg-opacity-80 outline-none"
                     onClick={closeModal}
                   >
                     Got it, thanks!

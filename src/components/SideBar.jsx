@@ -8,7 +8,7 @@ export default function SideBar() {
         <span className="font-bold">Your Consultations</span>
         <button
           type="button"
-          className="flex items-center px-3 py-[5px] space-x-1 border border-lavender-white border-opacity-20 transition ease-in-out duration-100 hover:scale-95"
+          className="flex items-center px-3 py-[5px] space-x-1 border border-lavender-white border-opacity-20 transition ease-in-out duration-100 hover:scale-95 outline-none"
         >
           <FiPlus />
           <span className="font-light text-xs">Create New</span>
