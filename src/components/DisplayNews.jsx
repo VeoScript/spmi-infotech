@@ -12,7 +12,7 @@ export default function DisplayNews({ news }) {
               <img
                 src={ !urlToImage ? 'https://blog.remitly.com/wp-content/uploads/2018/06/philippines-1195394_1920.jpg' : urlToImage }
                 alt="news_image"
-                className="w-full h-full max-h-[28rem] object-cover bg-lavender-black bg-opacity-20"
+                className="w-full h-full max-h-[28rem] object-cover bg-lavender-white bg-opacity-20"
               />
             </div>
             <div className="flex flex-col w-full max-w-full px-3 py-2 space-y-2">
