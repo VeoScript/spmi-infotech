@@ -3,23 +3,23 @@ import { FiPlus } from 'react-icons/fi'
 
 export default function SideBar() {
   return (
-    <div className="flex flex-col w-full max-w-md h-full overflow-hidden border-l border-lavender-white border-opacity-20">
-      <div className="flex flex-row items-center justify-between px-5 py-2.5 border-b border-lavender-white border-opacity-20">
+    <div className="flex flex-col w-full max-w-md h-full overflow-hidden border-l border-nature-white border-opacity-20">
+      <div className="flex flex-row items-center justify-between px-5 py-2.5 border-b border-nature-white border-opacity-20">
         <span className="font-bold">Your Consultations</span>
         <button
           type="button"
-          className="flex items-center px-3 py-[5px] space-x-1 border border-lavender-white border-opacity-20 transition ease-in-out duration-100 hover:scale-95 outline-none"
+          className="flex items-center px-3 py-[5px] space-x-1 border border-nature-dim transition ease-in-out duration-100 hover:border-nature-white hover:border-opacity-30 outline-none"
         >
           <FiPlus />
           <span className="font-light text-xs">Create New</span>
         </button>
       </div>
       <div className="flex flex-col w-full h-full overflow-y-auto">
-        <div className="flex flex-row items-center w-full py-3 border-b border-lavender-white border-opacity-20 space-x-3 transition ease-in-out duration-300 hover:bg-lavender-dark hover:bg-opacity-10">
+        <div className="flex flex-row items-center w-full py-3 border-b border-nature-white border-opacity-20 space-x-3 transition ease-in-out duration-300 hover:bg-nature-dim">
           <div className="flex flex-col w-full max-w-full px-3 py-2 space-y-2">
             <div className="flex flex-row items-center w-full space-x-2">
-              <h1 className="font-bold text-lg">Jerome Villaruel <span className="font-light text-sm text-lavender-white text-opacity-50">PC 13</span></h1>
-              <div className="flex items-center px-3 py-[2px] space-x-1 bg-lavender-light text-lavender-white border border-lavender-black border-opacity-20">
+              <h1 className="font-bold text-lg">Jerome Villaruel <span className="font-light text-sm text-nature-white text-opacity-50">PC 13</span></h1>
+              <div className="flex items-center px-3 py-[2px] space-x-1 bg-nature-light bg-nature-light text-nature-white border border-nature-white border-opacity-20">
                 <span className="font-light text-[10px]">Undone</span>
               </div>
             </div>
@@ -30,16 +30,16 @@ export default function SideBar() {
             </div>
             <div className="flex flex-col w-full space-y-2">
               <div className="flex flex-col space-y-1">
-                <h1 className="font-normal text-xs text-lavender-white text-opacity-30">Resolution Made</h1>
+                <h1 className="font-normal text-xs text-nature-white text-opacity-30">Resolution Made</h1>
                 <span className="font-light text-xs line-clamp-1">Display here your actual resolution to the particular reported issues.</span>
               </div>
               <div className="flex flex-row items-center w-full space-x-2">
-                <h6 className="font-light text-xs text-lavender-white text-opacity-80">
-                  <span className="font-normal text-lavender-white text-opacity-30">Date Reported: </span><Moment date="08/10/21" format='LL' />
+                <h6 className="font-light text-xs text-nature-white text-opacity-80">
+                  <span className="font-normal text-nature-white text-opacity-30">Date Reported: </span><Moment date="08/10/21" format='LL' />
                 </h6>
-                <span className="font-bold text-xs text-lavender-white text-opacity-80">&bull;</span>
-                <h6 className="font-light text-xs text-lavender-white text-opacity-80">
-                  <span className="font-normal text-lavender-white text-opacity-30">Date Resolved: </span><Moment date="08/12/21" format='LL' />
+                <span className="font-bold text-xs text-nature-white text-opacity-80">&bull;</span>
+                <h6 className="font-light text-xs text-nature-white text-opacity-80">
+                  <span className="font-normal text-nature-white text-opacity-30">Date Resolved: </span><Moment date="08/12/21" format='LL' />
                 </h6>
               </div>
             </div>

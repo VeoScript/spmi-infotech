@@ -17,7 +17,7 @@ export default function About() {
   return (
     <>
       <button
-        className="flex items-center space-x-1 transition ease-in-out duration-300 hover:text-lavender-light outline-none"
+        className="flex items-center space-x-1 transition ease-in-out duration-300 hover:text-nature-white hover:text-opacity-50 outline-none"
         type="button"
         onClick={openModal}
       >
@@ -31,7 +31,7 @@ export default function About() {
           className="fixed inset-0 z-10 overflow-y-auto"
           onClose={closeModal}
         >
-          <div className="min-h-screen px-4 text-center bg-[#444444] bg-opacity-50">
+          <div className="min-h-screen px-4 text-center bg-nature-white bg-opacity-20">
             <Transition.Child
               as={Fragment}
               enter="ease-out duration-300"
@@ -60,27 +60,27 @@ export default function About() {
               leaveFrom="opacity-100 scale-100"
               leaveTo="opacity-0 scale-95"
             >
-              <div className="inline-block w-full max-w-2xl p-6 my-8 overflow-hidden text-left align-middle transition-all transform text-lavender-white bg-[#000] bg-opacity-90 shadow-xl rounded-md">
+              <div className="inline-block w-full max-w-2xl p-6 my-8 overflow-hidden text-left align-middle transition-all transform text-nature-white bg-nature-black shadow-xl rounded-md">
                 <div className="flex flex-col w-full mt-2 space-y-2">
                   <div className="flex flex-col w-full space-y-1">
-                    <h1 className="font-bold text-base text-lavender-white">System</h1>
-                    <p className="font-light text-sm text-lavender-gray">
+                    <h1 className="font-bold text-base text-nature-white">System</h1>
+                    <p className="font-light text-sm text-nature-white text-opacity-80">
                       This system is intended for SPMI - Information & Communications Technology Department for the IT Consultation System.
-                      All of this features are originally inspired by my own conceptions. ITCS is an open source project here is the <Link href="https://github.com/VeoScript/spmi-infotech"><a className="text-lavender-light hover:underline" target="_blank">source code</a></Link>,
-                      everyone can clone or update this project if they want.
+                      All of this features are originally inspired by my own conceptions. ITCS is an open source project here is the <Link href="https://github.com/VeoScript/spmi-infotech"><a className="text-blue-400 hover:underline" target="_blank">source code</a></Link>,
+                      anyone can clone or update this project if they want.
                       This system was built in React JS powered by NextJS and Prisma with PostgreSQL.
                     </p>
                   </div>
                   <div className="flex flex-col w-full space-y-1">
-                    <h1 className="font-bold text-base text-lavender-white">Main Feature</h1>
-                    <p className="font-light text-sm text-lavender-gray">
+                    <h1 className="font-bold text-base text-nature-white">Main Feature</h1>
+                    <p className="font-light text-sm text-nature-white text-opacity-80">
                       Generate monthly reports, realtime daily news and manage users consultations.
                       ITCS managed all of computers that registered inside the SPMI Plant.
                     </p>
                   </div>
                   <div className="flex flex-col w-full space-y-1">
-                    <h1 className="font-bold text-base text-lavender-white">Developer</h1>
-                    <p className="font-light text-sm text-lavender-gray">
+                    <h1 className="font-bold text-base text-nature-white">Developer</h1>
+                    <p className="font-light text-sm text-nature-white text-opacity-80">
                       Proudly created with 💕 by Jerome Villaruel (VEOSCRIPT). © ITCS 2021.
                     </p>
                   </div>
@@ -89,7 +89,7 @@ export default function About() {
                 <div className="mt-4">
                   <button
                     type="button"
-                    className="w-full max-w-[8rem] py-2 text-sm text-center bg-lavender-light hover:bg-opacity-80 outline-none"
+                    className="w-full max-w-[8rem] py-2 text-sm text-center border border-nature-dim hover:border-nature-white hover:border-opacity-30 outline-none"
                     onClick={closeModal}
                   >
                     Got it, thanks!
