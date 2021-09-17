@@ -3,14 +3,14 @@ import NextNprogress from 'nextjs-progressbar'
 export default function NextProgress() {
   return (
     <NextNprogress
-      color="#00B7F1
+      color="#FF9800
       linear-gradient(
         to right,
-        #00B7F1,
-        #016BB9,
-        #00B7F1,
-        #016BB9,
-        #252C36
+        #FF9800,
+        #FA0300,
+        #FF9800,
+        #FA0300,
+        #FF9800
       );"
       startPosition={0.3}
       stopDelayMs={200}

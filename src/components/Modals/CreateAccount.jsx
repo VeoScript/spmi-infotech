@@ -18,7 +18,7 @@ export default function CreateAccount({ setDropdown }) {
   return (
     <>
       <button
-        className="flex items-center w-full space-x-2 p-3 border-b border-lavender-black border-opacity-20 hover:bg-lavender-light hover:text-lavender-white outline-none"
+        className="flex items-center w-full space-x-2 p-3 border-b border-nature-white border-opacity-20 hover:text-nature-white hover:text-opacity-50 outline-none"
         type="button"
         onClick={openModal}
       >
@@ -32,7 +32,7 @@ export default function CreateAccount({ setDropdown }) {
           className="fixed inset-0 z-10 overflow-y-auto"
           onClose={closeModal}
         >
-          <div className="min-h-screen px-4 text-center bg-[#444444] bg-opacity-50">
+          <div className="min-h-screen px-4 text-center bg-nature-white bg-opacity-20">
             <Transition.Child
               as={Fragment}
               enter="ease-out duration-300"
@@ -61,40 +61,40 @@ export default function CreateAccount({ setDropdown }) {
               leaveFrom="opacity-100 scale-100"
               leaveTo="opacity-0 scale-95"
             >
-              <div className="inline-block w-full max-w-md p-6 my-8 overflow-hidden text-left align-middle transition-all transform text-lavender-white bg-[#000] bg-opacity-90 shadow-xl rounded-md">
+              <div className="inline-block w-full max-w-lg p-6 my-8 overflow-hidden text-left align-middle transition-all transform text-nature-white bg-nature-black shadow-xl rounded-md">
                 <Dialog.Title
                   as="h3"
-                  className="font-bold text-base text-lavender-white"
+                  className="font-bold text-base text-nature-white"
                 >
                   Create User Account
                 </Dialog.Title>
                 <form className="flex flex-col w-full mt-2 space-y-2">
-                  <div className="flex flex-row items-center w-full max-w-full p-2 space-x-2 text-sm bg-lavender-black border border-lavender-white border-opacity-20 focus-within:border-lavender-light">
-                    <FiUser className="text-base text-lavender-white text-opacity-50" />
+                  <div className="flex flex-row items-center w-full max-w-full p-2 space-x-2 text-sm text-nature-white bg-nature-black border border-nature-dim focus-within:border-nature-white focus-within:border-opacity-30">
+                    <FiUser className="text-base text-nature-white text-opacity-50" />
                     <input type="text" placeholder="Name" className="w-full bg-transparent outline-none" />
                   </div>
-                  <div className="flex flex-row items-center w-full max-w-full p-2 space-x-2 text-sm bg-lavender-black border border-lavender-white border-opacity-20 focus-within:border-lavender-light">
-                    <FiMonitor className="text-base text-lavender-white text-opacity-50" />
+                  <div className="flex flex-row items-center w-full max-w-full p-2 space-x-2 text-sm text-nature-white bg-nature-black border border-nature-dim focus-within:border-nature-white focus-within:border-opacity-30">
+                    <FiMonitor className="text-base text-nature-white text-opacity-50" />
                     <input type="text" placeholder="Computer Name" className="w-full bg-transparent outline-none" />
                   </div>
-                  <div className="flex flex-row items-center w-full max-w-full p-2 space-x-2 text-sm bg-lavender-black border border-lavender-white border-opacity-20 focus-within:border-lavender-light">
-                    <FiCloud className="text-base text-lavender-white text-opacity-50" />
+                  <div className="flex flex-row items-center w-full max-w-full p-2 space-x-2 text-sm text-nature-white bg-nature-black border border-nature-dim focus-within:border-nature-white focus-within:border-opacity-30">
+                    <FiCloud className="text-base text-nature-white text-opacity-50" />
                     <input type="text" placeholder="Department" className="w-full bg-transparent outline-none" />
                   </div>
-                  <div className="flex flex-row items-center w-full max-w-full p-2 space-x-2 text-sm bg-lavender-black border border-lavender-white border-opacity-20 focus-within:border-lavender-light">
-                    <FiShield className="text-base text-lavender-white text-opacity-50" />
+                  <div className="flex flex-row items-center w-full max-w-full p-2 space-x-2 text-sm text-nature-white bg-nature-black border border-nature-dim focus-within:border-nature-white focus-within:border-opacity-30">
+                    <FiShield className="text-base text-nature-white text-opacity-50" />
                     <input type="text" placeholder="Username" className="w-full bg-transparent outline-none" />
                   </div>
-                  <div className="flex flex-row items-center justify-end w-full space-x-1 mt-4">
+                  <div className="flex flex-row items-center justify-start w-full space-x-1 mt-4">
                     <button
                       type="submit"
-                      className="w-full max-w-[8rem] py-2 text-sm text-center bg-lavender-light hover:bg-opacity-80 outline-none"
+                      className="w-full max-w-[8rem] py-2 text-sm text-center border border-nature-dim text-nature-white hover:border-nature-white hover:border-opacity-30 outline-none"
                     >
                       Create
                     </button>
                     <button
                       type="button"
-                      className="w-full max-w-[8rem] py-2 text-sm text-center bg-lavender-black hover:bg-opacity-80 outline-none"
+                      className="w-full max-w-[8rem] py-2 text-sm text-center border border-nature-dim text-nature-white hover:border-nature-white hover:border-opacity-30 outline-none"
                       onClick={closeModal}
                     >
                       Cancel

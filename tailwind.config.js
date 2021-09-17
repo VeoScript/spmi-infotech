@@ -9,11 +9,9 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        'lavender-black': '#252C36',
-        'lavender-white': '#FFFFFF',
-        'lavender-gray': '#D5D7D6',
-        'lavender-dark': '#016BB9',
-        'lavender-light': '#00B7F1'
+        'nature-white': '#F5F5F5',
+        'nature-black': '#22272E',
+        'nature-dim': '#2D333B',
       },
       fontFamily: {
         poppins: ['Poppins', ...defaultTheme.fontFamily.sans],
