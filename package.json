@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
+    "golive": "lt --port 3000 --subdomain spmi-itcs --local-host '127.0.0.1' -o --print-requests",
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
@@ -11,6 +12,7 @@
   "dependencies": {
     "@headlessui/react": "^1.4.1",
     "@tailwindcss/line-clamp": "^0.2.1",
+    "localtunnel": "^2.0.1",
     "moment": "^2.29.1",
     "next": "11.1.2",
     "nextjs-progressbar": "^0.0.11",
